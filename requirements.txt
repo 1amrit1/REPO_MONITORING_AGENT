@@ -1,4 +1,5 @@
 groq
+ollama
 python-dotenv
 fastapi
 uvicorn

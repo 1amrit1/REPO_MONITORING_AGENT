@@ -37,7 +37,7 @@ State Store (SQLite)
 | Component | Choice | Why |
 |---|---|---|
 | Language | Python | LLM ecosystem is Python-first |
-| LLM | Groq API + Llama 3.3 70B | Free tier, fast inference, no credit card needed |
+| LLM | Groq (hosted, `openai/gpt-oss-120b`) **or** Ollama (local) — pluggable via `LLM_PROVIDER` | Groq: free tier, fastest hosted inference, no card (Llama 3.3 70B was free-tier but moved to Enterprise-only in 2026 — gpt-oss-120b is the current free-tier equivalent). Ollama: fully offline fallback, no key, bounded by local hardware |
 | Webhook receiver | FastAPI | Async, lightweight, OpenAPI docs auto-generated |
 | GitHub integration | PyGithub | Official Python SDK |
 | Vector memory | ChromaDB | Local, no server needed, free |
