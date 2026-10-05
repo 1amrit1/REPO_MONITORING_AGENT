@@ -1,0 +1,7 @@
+groq
+python-dotenv
+fastapi
+uvicorn
+pygithub
+chromadb
+pydantic
